@@ -48,7 +48,8 @@ h3{
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 30px;
-    margin-top: 39px;
+    margin-top: 30px;
+    color: #000000;
 }
 
 span {
@@ -65,21 +66,27 @@ span {
     margin-left: -15px;
 }
 
+.cargoicon{
+    text-align: center;
+}
+
 .cargoicon__img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 22px;
 }
 
-.dotted {
+.cargoicon:before, .cargoicon:after {
     position: relative;
-    bottom: -12px;
-    /* display: inline-block; */
-    width: 150px;
+    display: inline-block;
+    width: 70px;
     border-bottom: 2px dotted #000000;
-    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    content: "";
 }
+
 
 .services__bottom {
     background: #ffffff;
@@ -87,7 +94,7 @@ span {
 }
 
 .square__container{
-    /*display: flex;*/
+   text-align: center;
 }
 
 .square{
@@ -103,19 +110,53 @@ span {
     background: #000000;
 }
 
-.readmore{
-    margin-bottom: 0px;
+.readmore__header{
+    margin-bottom: -20px;
     font-size: 12px;
+    padding-bottom: 10px;
 }
 
-.dotted__readmore{
-    width: 90px;
-    margin-bottom: 50px;
+.readmore__btn {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.readmore::after{
+    display: inline-block;
+    width: 70px;
     border-bottom: 1px dotted #000000;
+    content: "";
+}
+
+.pages:hover .readmore {
+    border-bottom: 1px dotted #fff;
+}
+
+.services_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+}
+.pages {
+    /* width: 100%; */
+    background: #fff;
+    width: 320px;
+    margin-left: 30px;
+    border-bottom: 3px solid #777777;
+    transition: .5s;
+    border-radius: 15px 0 0 0;
+    box-shadow: 4px -5px 12px 1px rgba(0,0,0,0.25)
+}
+.pages:last-child {
+    margin-right: 0;
 }
 
 .pages:hover{
     background: #000000;
+    border-bottom: 3px solid #ffb118;
 }
 
 .pages:hover h3{
@@ -134,10 +175,10 @@ span {
     border-bottom: 1px dotted #ffffff;
 }
 
-.services__bottom-wrap{
+/* .services__bottom-wrap{
     position: absolute;
     top:-50px;
     background: #ffffff;
     left: 0;
     right: 0;
-}
+} */
