@@ -26,7 +26,7 @@ body {
     padding: 50px 0 80px 0;
 }
 
-h1,h2,h3{
+h1,h2,h3,h4 {
     font-family: 'Titillium Web', sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -44,12 +44,18 @@ h2{
     margin-bottom: 0px;
 }
 
-h3{
+h3,h4 {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 30px;
     margin-top: 30px;
     color: #000000;
+}
+h4 {
+    font-weight: 500;
+    display: block;
+    width: 420px;
+    margin: 0 auto;
 }
 
 span {
@@ -68,6 +74,7 @@ span {
 
 .cargoicon{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .cargoicon__img {
@@ -182,3 +189,7 @@ span {
     left: 0;
     right: 0;
 } */
+
+.features_article {
+    margin-bottom: 60px;
+}
