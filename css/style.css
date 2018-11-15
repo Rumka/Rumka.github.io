@@ -225,8 +225,11 @@ span, .features__text {
     display: block;
 }
 
+.features__container-icon{
+    display: flex;
+    justify-content: center;
+}
 .features__icon {
-    position: relative;
     margin-top: 5px;
 }
 
@@ -360,4 +363,21 @@ li{
 
 .footer__copyright.terms{
     float: right;
+}
+
+.features__container-icon:after {
+    position: absolute;
+    display: block;
+    width: 50px;
+    top: 100px;
+    border-bottom: 1px dotted #000000;
+    padding-left: 10px;
+    transform: rotate(-90deg);
+    content: "";
+}
+
+.features__arrow{
+    margin-top: 50px;
+    float: right;
+    position: relative;
 }
